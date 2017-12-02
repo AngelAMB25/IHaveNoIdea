@@ -161,3 +161,230 @@ input, textarea {
     padding-bottom: 10px;
     color: grey;
 }
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Teams</title>
+	</head>
+	<body>
+		<h2 align="center">Team #1</h2>
+    <table border=1px align="center">
+
+      <tr bgcolor="lightGREY" align="center" >
+        <td>Disease D</td>
+        <td>Optics</td>
+        <td>Astro</td>
+        <td>Exp D</td>
+        <td>Mat Sci</td>
+        <td>A/P</td>
+      </tr>
+      <tr align="center">
+        <td>Emilie</td>
+        <td>Alex A</td>
+        <td>Jasmin R</td>
+        <td>Emilie P</td>
+        <td>Emma W</td>
+        <td>Sophia V</td>
+      </tr>
+      <tr align="center">
+        <td>Mulan</td>
+        <td>Jason K</td>
+        <td>Claire H</td>
+        <td>Claire H</td>
+        <td>Alex J</td>
+        <td>Taylor J</td>
+      </tr>
+      <tr align="center">
+        <td></td>
+        <td> </td>
+        <td> </td>
+        <td>Ashley W</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr align="center"  bgcolor="lightgrey">
+        <td>Chem Lab</td>
+        <td>Helicopters</td>
+        <td>Mousetrap</td>
+        <td>Fermi Q</td>
+        <td>Herp</td>
+        <td>Game On</td>
+      </tr>
+      <tr align="center">
+        <td>Emma W
+        </td>
+        <td>Sathyam</td>
+        <td>Marton</td>
+        <td>Jason K</td>
+        <td>Taylor K</td>
+        <td>Alex A</td>
+      </tr>
+      <tr align="center">
+        <td>Alex J</td>
+        <td>Marton</td>
+        <td></td>
+        <td></td>
+        <td>Kendall L</td>
+        <td>Sathyam</td>
+      </tr>
+      <tr align="center"  bgcolor="lightgrey">
+        <td>Forensics</td>
+        <td>Thermo</td>
+        <td>Dynamic</td>
+        <td>Ecology</td>
+        <td>Hover</td>
+        <td>Towers</td>
+      </tr>
+      <tr align="center" >
+        <td>Taylor J</td>
+        <td>Jason</td>
+        <td>Ashley W</td>
+        <td>Sophia V</td>
+        <td>Marton</td>
+        <td>Marton</td>
+      </tr>
+      <tr align="center" >
+        <td>Emma W</td>
+        <td>Taylor K</td>
+        <td>Mulan Y</td>
+        <td>Ashley W</td>
+        <td>Alex A</td>
+        <td>Sathyam</td>
+      </tr>
+      <tr align="center"  bgcolor="lightgrey">
+        <td>Microbe</td>
+        <td>WIDI</td>
+        <td>Rocks</td>
+        <td>Remote</td>
+        <td>Mission</td>
+        <td></td>
+      </tr>
+      <tr align="center" >
+        <td>Sophia V</td>
+        <td>Claire H</td>
+        <td>Emilie P</td>
+        <td>Alex A</td>
+        <td>Tayor K</td>
+        <td></td>
+      </tr>
+      <tr align="center" >
+        <td>Kendall L</td>
+        <td>Taylor J</td>
+        <td>Jasmine R</td>
+        <td>Mulan Y</td>
+        <td>Taylor J</td>
+        <td></td>
+      </tr>
+    </table>
+    
+    <h2 align="center">Team #2</h2>
+    <table border=1px align="center">
+
+      <tr bgcolor="lightGREY" align="center" >
+        <td>Disease D</td>
+        <td>Optics</td>
+        <td>Astro</td>
+        <td>Exp D</td>
+        <td>Mat Sci</td>
+        <td>A/P</td>
+      </tr>
+      <tr align="center">
+        <td>Lauren M</td>
+        <td>Alex G</td>
+        <td>Cameron B</td>
+        <td>Alyssa H</td>
+        <td>Matt C</td>
+        <td>Elisa</td>
+      </tr>
+      <tr align="center">
+        <td>OLivia P</td>
+        <td>Matt P</td>
+        <td>Alex G</td>
+        <td>Elizabeth A</td>
+        <td></td>
+        <td>Elizabeth A</td>
+      </tr>
+      <tr align="center">
+        <td></td>
+        <td> </td>
+        <td> </td>
+        <td>Cameron B</td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr align="center"  bgcolor="lightgrey">
+        <td>Chem Lab</td>
+        <td>Helicopters</td>
+        <td>Mousetrap</td>
+        <td>Fermi Q</td>
+        <td>Herp</td>
+        <td>Game On</td>
+      </tr>
+      <tr align="center">
+        <td>Emma W
+        </td>
+        <td>Sathyam</td>
+        <td>Marton</td>
+        <td>Jason K</td>
+        <td>Taylor K</td>
+        <td>Alex A</td>
+      </tr>
+      <tr align="center">
+        <td>Alex J</td>
+        <td>Marton</td>
+        <td></td>
+        <td></td>
+        <td>Kendall L</td>
+        <td>Sathyam</td>
+      </tr>
+      <tr align="center"  bgcolor="lightgrey">
+        <td>Forensics</td>
+        <td>Thermo</td>
+        <td>Dynamic</td>
+        <td>Ecology</td>
+        <td>Hover</td>
+        <td>Towers</td>
+      </tr>
+      <tr align="center" >
+        <td>Taylor J</td>
+        <td>Jason</td>
+        <td>Ashley W</td>
+        <td>Sophia V</td>
+        <td>Marton</td>
+        <td>Marton</td>
+      </tr>
+      <tr align="center" >
+        <td>Emma W</td>
+        <td>Taylor K</td>
+        <td>Mulan Y</td>
+        <td>Ashley W</td>
+        <td>Alex A</td>
+        <td>Sathyam</td>
+      </tr>
+      <tr align="center"  bgcolor="lightgrey">
+        <td>Microbe</td>
+        <td>WIDI</td>
+        <td>Rocks</td>
+        <td>Remote</td>
+        <td>Mission</td>
+        <td></td>
+      </tr>
+      <tr align="center" >
+        <td>Sophia V</td>
+        <td>Claire H</td>
+        <td>Emilie P</td>
+        <td>Alex A</td>
+        <td>Tayor K</td>
+        <td></td>
+      </tr>
+      <tr align="center" >
+        <td>Kendall L</td>
+        <td>Taylor J</td>
+        <td>Jasmine R</td>
+        <td>Mulan Y</td>
+        <td>Taylor J</td>
+        <td></td>
+      </tr>
+    </table>
+	</body>
+</html>
