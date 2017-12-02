@@ -1,1 +1,78 @@
 
+/**
+ * This program will suggest what Science Olympiad events would satisfy a user's
+ * interests through collecting and analyzing user input.
+ *
+ * @Angel Millard-Bruzos
+ * @December 2, 2017
+ */
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.Random;
+
+public class SciOly
+{
+    public static void main(String [] args) throws IOException
+    {
+        //Declarations
+        Scanner in = new Scanner(System.in);
+        Random randNum = new Random();
+        PrintWriter outFile = new PrintWriter(new File("SciOly.txt"));
+        File fileName = new File("SciOly.txt");
+        Scanner inFile = new Scanner(fileName);
+        
+        //Write events to new file
+        outFile.println("Anatomy and Physiology");
+        outFile.println("Astronomy");
+        outFile.println("Chemistry Lab");
+        outFile.println("Disease Detectives");
+        outFile.println("Dynamic Planet");
+        outFile.println("Ecology");
+        outFile.println("Experimental Design");
+        outFile.println("Fermi Questions");
+        outFile.println("Forensics");
+        outFile.println("Game On");
+        outFile.println("Helicopters");
+        outFile.println("Herpetology");
+        outFile.println("Hovercraft");
+        outFile.println("Materials Science");
+        outFile.println("Microbe Mission");
+        outFile.println("Mission Possible");
+        outFile.println("Mousetrap Vehicle");
+        outFile.println("Optics");
+        outFile.println("Remote Sensing");
+        outFile.println("Rocks and Minerals");
+        outFile.println("Thermodynamics");
+        outFile.println("Towers");
+        outFile.println("Wrte it Do it");
+        outFile.close();
+        
+        String[] events = new String[23];
+        
+        //Create new file and assign array elements
+        while (inFile.hasNextLine())
+        {
+            for (int i = 0; i < events.length; i++)
+            {
+                events[i] = inFile.nextLine();
+            }
+        }
+        inFile.close();
+        
+        
+        //Display
+        int eventNumber = 1;
+        System.out.println();
+        System.out.printf("%62s%n", "Science Olympiad Event Suggestor");
+        System.out.println("********************************************************************************************");
+        for (String event : events)
+        {
+            System.out.printf("%31d%s%s%n", eventNumber, "  ", event);
+            eventNumber++;
+        }
+        System.out.println("********************************************************************************************");
+    }
+}
+
