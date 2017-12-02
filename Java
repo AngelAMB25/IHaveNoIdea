@@ -6,73 +6,494 @@
  * @Angel Millard-Bruzos
  * @December 2, 2017
  */
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Scanner;
-import java.util.Random;
 
+import java.util.Scanner;
 public class SciOly
 {
-    public static void main(String [] args) throws IOException
+    public static void main(String [] args)
     {
         //Declarations
         Scanner in = new Scanner(System.in);
-        Random randNum = new Random();
-        PrintWriter outFile = new PrintWriter(new File("SciOly.txt"));
-        File fileName = new File("SciOly.txt");
-        Scanner inFile = new Scanner(fileName);
         
         //Write events to new file
-        outFile.println("Anatomy and Physiology");
-        outFile.println("Astronomy");
-        outFile.println("Chemistry Lab");
-        outFile.println("Disease Detectives");
-        outFile.println("Dynamic Planet");
-        outFile.println("Ecology");
-        outFile.println("Experimental Design");
-        outFile.println("Fermi Questions");
-        outFile.println("Forensics");
-        outFile.println("Game On");
-        outFile.println("Helicopters");
-        outFile.println("Herpetology");
-        outFile.println("Hovercraft");
-        outFile.println("Materials Science");
-        outFile.println("Microbe Mission");
-        outFile.println("Mission Possible");
-        outFile.println("Mousetrap Vehicle");
-        outFile.println("Optics");
-        outFile.println("Remote Sensing");
-        outFile.println("Rocks and Minerals");
-        outFile.println("Thermodynamics");
-        outFile.println("Towers");
-        outFile.println("Wrte it Do it");
-        outFile.close();
-        
         String[] events = new String[23];
-        
-        //Create new file and assign array elements
-        while (inFile.hasNextLine())
-        {
-            for (int i = 0; i < events.length; i++)
-            {
-                events[i] = inFile.nextLine();
-            }
-        }
-        inFile.close();
-        
+        events[0] = "Anatomy and Physiology";
+        events[1] = "Astronomy";
+        events[2] ="Chemistry Lab";
+        events[3] ="Disease Detectives";
+        events[4] = "Dynamic Planet";
+        events[5] = "Ecology";
+        events[6] = "Experimental Design";
+        events[7] = "Fermi Questions";
+        events[8] = "Forensics";
+        events[9] = "Game On";
+        events[10] = "Helicopters";
+        events[11] = "Herpetology";
+        events[12] = "Hovercraft";
+        events[13] = "Materials Science";
+        events[14] = "Microbe Mission";
+        events[15] = "Mission Possible";
+        events[16] = "Mousetrap Vehicle";
+        events[17] = "Optics";
+        events[18] = "Remote Sensing";
+        events[19] = "Rocks and Minerals";
+        events[20] = "Thermodynamics";
+        events[21] = "Towers";
+        events[22] = "Wrte it Do it";
         
         //Display
-        int eventNumber = 1;
         System.out.println();
-        System.out.printf("%62s%n", "Science Olympiad Event Suggestor");
-        System.out.println("********************************************************************************************");
-        for (String event : events)
+        System.out.printf("%50s%n%n", "Science Olympiad Event Program");
+        System.out.println("Please select an option from the listed actions.");
+        System.out.println("************************************************************************");
+        System.out.println(" [1]  Event List and Descriptions");
+        System.out.println(" [2]  Science Olympiad Event Suggestor");
+        System.out.println(" [3]  Quit");
+        System.out.println("************************************************************************");
+        int option = in.nextInt();
+        while (option != 3)
         {
-            System.out.printf("%31d%s%s%n", eventNumber, "  ", event);
-            eventNumber++;
+            while (option < 1 || option > 3)
+            {
+                System.out.println("Incorrect Option. Please try again");
+                System.out.println("Please select an option from the listed actions.");
+                option = in.nextInt();
+            }
+            if (option == 1)
+            {
+                int eventNumber = 1;
+                System.out.println("************************************************************************");
+                for (String event : events)
+                {
+                    System.out.printf("%21d%s%s%n", eventNumber, "  ", event);
+                    eventNumber++;
+                }
+                System.out.printf("%21d%s%s%n", eventNumber, "  ", "Back");
+                System.out.println("************************************************************************");
+                System.out.println("Please select the event you would like information on.");
+                int eventInfo = in.nextInt();
+                while (eventInfo != 24)
+                {
+                    while (eventInfo < 1 || eventInfo > 24)
+                    {
+                        System.out.println("\n Incorrect Option. Please try again.");
+                        eventInfo = in.nextInt();
+                    }
+                    if (eventInfo == 1)
+                    {
+                        System.out.println("Anatomy and Physiology is an event which tests students' knowledge about the");
+                        System.out.println("anatomy and physiology of a human body. Division B and Division C will both typically concentrate");
+                        System.out.println("on three systems, which change each year. Topics may include diseases in those systems as well as");
+                        System.out.println("the general anatomy and function of each system from the cellular to the holistic scale. The event");
+                        System.out.println("may be run in stations or administered as a test packet. Teams are allowed to bring writing utensils,"); 
+                        System.out.println("two non-programmable calculators, and one double-sided page of notes containing information in any ");
+                        System.out.println("form from any source.");
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 2)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 3)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 4)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 5)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 6)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 7)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 8)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 9)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 10)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 11)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 12)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 13)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 14)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 15)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 16)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 17)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 18)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 19)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 20)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 21)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 22)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 23)
+                    {
+                        System.out.println("Please select the event you would like information on.");
+                        eventInfo = in.nextInt();
+                    }
+                    else if (eventInfo == 24)
+                    {
+                        
+                    }
+                    else
+                    {
+                        System.out.print("Incorrect Option. Please try again.");
+                    }
+                }
+            }
+            else if (option == 2)
+            {
+                System.out.printf("%n%52s%n", "Science Olympiad Event Suggestor");
+                System.out.println("************************************************************************");
+                System.out.println("Please answer these three questions to determine what events and team");
+                System.out.println("would satisfy your interests.");
+                System.out.println("\nHow many competitions would you like to compete in?");
+                System.out.println("[1]  All Competitions");
+                System.out.println("[2]  Some Competitions");
+                System.out.println("[3]  Barely Any Competitions");
+                int compNum = in.nextInt();
+                while (compNum < 1 || compNum > 3)
+                {
+                    System.out.println("Incorrect option. Please try again.");
+                    compNum = in.nextInt();
+                }
+                System.out.println("\nWhat type of events are you interested in?");
+                System.out.println("[1]  Build Events");
+                System.out.println("[2]  Study Events");
+                System.out.println("[3]  Lab Events");
+                int eventType = in.nextInt();
+                while (eventType < 1 || eventType > 3)
+                {
+                    System.out.println("Incorrect option. Please try again.");
+                    eventType = in.nextInt();
+                }
+                System.out.println("\nWhat topics interest you?");
+                System.out.println("[1]  Life, Personal, and Social Science");
+                System.out.println("[2]  Earth and Space Science");
+                System.out.println("[3]  Physical Science and Chemistry");
+                System.out.println("[4]  Technology and Engineering");
+                System.out.println("[5]  Inquiry and Nature of Science (Other)");
+                int topic = in.nextInt();
+                while (topic < 1 || topic > 3)
+                {
+                    System.out.println("Incorrect option. Please try again.");
+                    topic = in.nextInt();
+                }
+                
+                String competition = "";
+                if (compNum == 1)
+                {
+                    competition = "all competitions";
+                }
+                else if (compNum == 2)
+                {
+                    competition = "some competitions";
+                }
+                else if (compNum == 3)
+                {
+                    competition = "barely any competitions";
+                }
+                
+                String eventStyle = "";
+                if (eventType == 1)
+                {
+                    eventStyle = "build events";
+                }
+                else if (eventType == 2)
+                {
+                    eventStyle = "student events";
+                }
+                else if (eventType == 3)
+                {
+                    eventStyle = "lab events";
+                }
+                
+                String topicType = "";
+                if (topic == 1)
+                {
+                    topicType = "life, personal, and social science";
+                }
+                else if (topic == 2)
+                {
+                    topicType = "Earth and space science";
+                }
+                else if (topic == 3)
+                {
+                    topicType = "physical science and chemistry";
+                }
+                else if (topic == 4)
+                {
+                    topicType = "technology and engineering";
+                }
+                else if (topic == 5)
+                {
+                    topicType = "inquiry and nature of science";
+                }
+                
+                System.out.println("************************************************************************");
+                System.out.println("\nYou are interested in competing in " + competition + ".");
+                System.out.println("You are interested in competing in " + eventStyle + ".");
+                System.out.println("You are interested in the topic of " + topicType + ".");
+                if (compNum == 1 && eventType == 1 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 1 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 1 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 1 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 1 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 2 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 2 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 2 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 2 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 2 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 3 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 3 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 3 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 3 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 1 && eventType == 3 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team one.");
+                }
+                else if (compNum == 2 && eventType == 1 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 1 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 1 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 1 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 1 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 2 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 2 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 2 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 2 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 2 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 3 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 3 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 3 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 3 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 2 && eventType == 3 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team two.");
+                }
+                else if (compNum == 3 && eventType == 1 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 1 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 1 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 1 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 1 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 2 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 2 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 2 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 2 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 2 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 3 && topic == 1)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 3 && topic == 2)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 3 && topic == 3)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 4 && topic == 4)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+                else if (compNum == 3 && eventType == 5 && topic == 5)
+                {
+                    System.out.println("\n\nYou would be interested in competing in team yellow/green/blue.");
+                }
+            }
+            else if (option == 3)
+            {
+                System.out.println("\n Thank you for using the Science Olympiad Event Program");
+            }
         }
-        System.out.println("********************************************************************************************");
+        if (option == 3)
+        {
+            System.out.println("Thank you for using the Science Olympiad Event Program");
+        }
     }
 }
 
